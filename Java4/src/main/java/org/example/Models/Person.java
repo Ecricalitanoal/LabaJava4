@@ -47,7 +47,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" + "id = " + id + ", name = '" + name + '\'' + ", gender = " + gender + ", department = " + division.toString() + ", salary = " + salary +
+        return "Person{" + "id = " + id + ", name = '" + name + '\'' + ", gender = " + gender + ", division = " + division.toString() + ", salary = " + salary +
                 ", birthDate = " + birtDate + '}';
     }
 }

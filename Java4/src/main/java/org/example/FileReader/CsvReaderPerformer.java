@@ -58,9 +58,9 @@ public class CsvReaderPerformer {
         int id = Integer.parseInt(data[0]);
         String name = data[1];
         String gender = data[2];
-        String divisionLetter = data[3];
-        double salary = Double.parseDouble(data[4]);
-        LocalDate birthDate = LocalDate.parse(data[5], DATE_FORMATTER);
+        LocalDate birthDate = LocalDate.parse(data[3], DATE_FORMATTER);
+        String divisionLetter = data[4];
+        double salary = Double.parseDouble(data[5]);
 
         Division division = divisionsMap.get(divisionLetter);
         if (division == null) {
