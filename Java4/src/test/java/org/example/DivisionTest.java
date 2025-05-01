@@ -5,16 +5,24 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Unit Тесты для класса Division.
+ */
+
 public class DivisionTest {
 
-
+    /**
+     * Проверка метода toString().
+     */
     @Test
     void testToString() {
         Division division = new Division("div1");
         String neededResult = "Division{id='" + division.getId() + "', name='div1'}";
         assertEquals(neededResult, division.toString());
     }
-
+    /**
+     * Проверка создания отдела.
+     */
     @Test
     void testConstructor() {
         String divisionName = "I";
@@ -23,7 +31,9 @@ public class DivisionTest {
         assertTrue(division.getId() > 0);
     }
 
-
+    /**
+     * Проверка автоинкремента id отдела.
+     */
     @Test
     void testIdAutoIncrement() {
         Division dept1 = new Division("div1");

@@ -8,8 +8,14 @@ import java.time.LocalDate;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class PersonTest {
+/**
+ * Unit Тесты для класса Person.
+ */
 
+class PersonTest {
+    /**
+     * Проверка метода toString().
+     */
     @Test
     void testToString() {
         Division division = new Division("I");
@@ -19,7 +25,9 @@ class PersonTest {
         String neededResult = "Person{id = 1, name = 'Mori', gender = Male, division = Division{id='1', name='I'}, salary = 200.0, birthDate = 2000-01-01}";
         assertEquals(neededResult, person.toString());
     }
-
+    /**
+     * Проверка создания Person.
+     */
     @Test
     void testConstructor() {
         Division division = new Division("I");

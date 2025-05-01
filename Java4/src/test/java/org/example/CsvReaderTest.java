@@ -8,9 +8,16 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+
+/**
+ * Unit Тесты для класса CsvReaderPerformer.
+ */
 class CsvReaderTest {
 
 
+    /**
+     * Проверка чтения корректного сsv-файла.
+     */
     @Test
     void testValidFile() throws Exception {
         CsvReaderPerformer readerService = new CsvReaderPerformer();
@@ -29,7 +36,9 @@ class CsvReaderTest {
         assertEquals("Male", firstInFile.getGender());
         assertEquals("I", firstInFile.getDivision().getName());
     }
-
+    /**
+     * Проверка чтения некорректного сsv-файла.
+     */
     @Test
     void testInvalidFile() {
         CsvReaderPerformer readerService = new CsvReaderPerformer();

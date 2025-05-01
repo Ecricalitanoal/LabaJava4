@@ -5,8 +5,16 @@ import org.example.Models.Person;
 
 import java.util.List;
 
-
+/**
+ * Основной класс для обработки данных из csv фалйа о сотрудниках.
+ */
 public class App {
+
+    /**
+     * Точка входа в приложение.
+     *
+     * @param args аргументы командной строки
+     */
     public static void main(String[] args) {
         String csvFilePath = "foreign_names.csv";
         char separator = ';';
