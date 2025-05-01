@@ -27,7 +27,7 @@ class CsvReaderTest {
         assertEquals(28281, firstInFile.getId());
         assertEquals("Aahan", firstInFile.getName());
         assertEquals("Male", firstInFile.getGender());
-        assertEquals("I", firstInFile.getDepartment().getName());
+        assertEquals("I", firstInFile.getDivision().getName());
     }
 
     @Test

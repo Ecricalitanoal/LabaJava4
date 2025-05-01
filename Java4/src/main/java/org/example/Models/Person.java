@@ -36,7 +36,7 @@ public class Person {
         return birtDate;
     }
 
-    public Division getDepartment() {
+    public Division getDivision() {
         return division;
     }
 
